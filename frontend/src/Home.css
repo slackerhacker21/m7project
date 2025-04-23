@@ -1,0 +1,30 @@
+/* src/Home.css */
+
+.home-background {
+    min-height: 90vh;
+    background: url('/marvelhomepagebackground.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 40px 60px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    font-family: 'Bebas Neue', Impact, 'Arial Black', Arial, sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  
+  .home-desc {
+    font-size: 1.4rem;
+  }
+  

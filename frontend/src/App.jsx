@@ -7,13 +7,7 @@ import NavigationBar from './Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddCharacter from './AddCharacter'; 
 import EditCharacter from './EditCharacter'; 
-
-
-
-// Home Page
-function Home() {
-  return <h1 className="text-center mt-5">Welcome to Marvel Character Manager</h1>;
-}
+import Home from './Home';
 
 // 404 Page
 function NotFound() {
@@ -30,9 +24,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/characters" element={<CharacterList />} />
           <Route path="/characters/:id" element={<CharacterDetail />} />
-          <Route path="*" element={<NotFound />} />
           <Route path="/add" element={<AddCharacter />} />
           <Route path="/edit/:id" element={<EditCharacter />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Container>
     </Router>
